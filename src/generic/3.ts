@@ -4,7 +4,7 @@
 */
 
 function merge<T, U>(objA: T, objB: U): T & U {
-	return Object.assign(objA, objB)
+	return Object.assign({}, objA, objB)
 }
 
 const obj1 = { a: 1, b: 2 }
